@@ -17,8 +17,47 @@
   display: flex;
 }
 
+.body-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .bot {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.body-item {
+  flex-grow: 1;
+  display: flex;
+}
+
+.projects {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-grid {
+  flex-grow: 1;
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 6px;
+}
+
+.projects-grid > div {
+  height: 250px;
+  border: 1px solid gray;
+  border-radius: 1%;
+}
+
+.side-bar-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar-container > div {
+  flex: 1;
 }
